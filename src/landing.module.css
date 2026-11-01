@@ -218,7 +218,7 @@
 
 
 .mySkillsList {
-    margin-top: 75px;
+    margin-top: 100px;
 }
 
 .mySkillsList header {
@@ -262,6 +262,10 @@
     margin-bottom: 5px;
 }
 
+.mySkillsList .skillsGroup {
+    margin-bottom: 15px;
+}
+
 @media (min-width: 800px) {
     .mySkillsList header {
         border: none;
@@ -299,7 +303,7 @@
 
     .mySkillsList ul li:not(:last-child) {
         margin-bottom: 0;
-        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 
@@ -316,7 +320,7 @@
 /* Find me Section */
 
 .findmeSection {
-    margin-top: 75px;
+    margin-top: 100px;
     position: relative;
 }
 
