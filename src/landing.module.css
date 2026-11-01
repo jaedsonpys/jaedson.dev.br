@@ -34,6 +34,7 @@
 .whoamiTextBox span {
     color: #28E9B2;
     font-family: 'Cascadia Mono', Arial, Helvetica, sans-serif;
+    text-decoration: underline;
 }
 
 .aboutMeSection h1 {
@@ -50,7 +51,7 @@
     border: 1px solid #28E9B2;
     height: 10px;
 
-    margin-top: -15px;
+    margin-top: -4%;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
 }
