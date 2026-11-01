@@ -1,122 +1,140 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import styles from "./landing.module.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function LandingPage() {
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <main className={styles.main}>
+      <section className={styles.aboutMeSection}>
+        <div className={styles.whoamiTextBox}>
+          <span>~$ WHOAMI</span>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
+        <div className={styles.nameApresentation}>
+          <h1>Jaedson Silva</h1>
+          <div className={styles.nameUnderlineDetail}></div>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+        <p>Graduando em Engenharia de Computação<br/>e desenvolvedor de software há 5 anos.</p>
+        <div className={styles.locationCard}>
+          <img src="/location.svg" alt="Location icon" />
+          <span>Maceió - AL</span>
+        </div>
       </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
+      <section className={styles.servicesSection}>
+        <header>
+          <h2>Conheça meus serviços</h2>
+        </header>
+        <div className={styles.backgroundDetail}></div>
+        <ul>
+          <li>
+            <h3>Desenvolvimento de Fimware</h3>
+            <p>Desenvolvo para você ou para sua empresa a o código-fonte necessário para a resolução do problema. <b>Confiável, testado e eficiente.</b></p>
+          </li>
+          <li>
+            <h3>Desenvolvimento Full-Stack (Front-end e/ou Back-end)</h3>
+            <p>Da interface que atrai o cliente até o sistema que coorderna sua operação, utilizo ferramentas modernas para desenvolver sua aplicação web, desktop ou mobile (Android e iOS) para garantir performance, segurança e alta experiência do usuário.</p>
+          </li>
+          <li>
+            <h3>Prototipagem de Sistemas Embarcados e produtos IoT</h3>
+            <p>Tire sua ideia do papel. Utilizando microcontroladores e componentes da sua preferência, <b>crio o protótipo do seu produto para que você possa testar e validar a ideia</b> com baixo custo. A prototipagem inclui o Desenvolvimento de Firmware, Eletrônica e Desenho 3D junto com Impressão 3D</p>
+          </li>
+          <li>
+            <h3>Modelagem e Impressão 3D</h3>
+            <p>Peças técnicas ou peças para reparo. Modelagem de peças em qualquer escala. Impressão 3D de alta qualidade para produto final ou testes.</p>
+          </li>
+        </ul>
+      </section>
+      <section className={styles.mySkillsList}>
+        <header>
+          <h2>Minhas habilidades</h2>
+          <div className={styles.headerDetail}></div>
+        </header>
+        <ul>
+          <div className={styles.skillsGroup}>
+            <li>
+              <span>Python 3</span>
+              <img src="/python.svg" alt="Python icon" />
+            </li>
+            <li>
+              <span>JavaScript</span>
+              <img src="/javascript.svg" alt="JavaScript icon" />
+            </li>
+            <li>
+              <span>C++ (CPP)</span>
+              <img src="/cpp.svg" alt="C++ icon" />
+            </li>
+            <li>
+              <span>TypeScript</span>
+              <img src="/typescript.svg" alt="TypeScript icon" />
+            </li>
+          </div>
+          <div className={styles.skillsGroup}>
+            <li>
+              <span>React.js</span>
+              <img src="/react.svg" alt="React.js icon" />
+            </li>
+            <li>
+              <span>Next.js</span>
+              <img src="/nextjs.svg" alt="Next.js icon" />
+            </li>
+            <li>
+              <span>Flask</span>
+              <img src="/flask.svg" alt="Flask icon" />
+            </li>
+            <li>
+              <span>FastAPI</span>
+              <img src="/fastapi.svg" alt="FastAPI icon" />
+            </li>
+          </div>
+          <div className={styles.skillsGroup}>
+            <li>
+              <span>MongoDB</span>
+              <img src="/mongodb.svg" alt="MongoDB icon" />
+            </li>
+            <li>
+              <span>JavaScript</span>
+              <img src="/mysql.svg" alt="MySQL icon" />
+            </li>
+          </div>
+        </ul>
+      </section>
+      <section className={styles.findmeSection}>
+        <header>
+          <div className={styles.backgroundLine}>
+          </div>
+          <div className={styles.sectionName}>
+            <h2>~$ WHICH @JAEDSONPYS</h2>
+          </div>
+        </header>
+        <nav>
           <ul>
             <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
+              <a href="https://linkedin.com/in/jaedsonpys">
+                <img src="/linkedin.svg" alt="LinkedIn logo" />
+                <h4>Meu LinkedIn</h4>
+                <p>Atualizações na carreira e publicação de experiências profissionais.</p>
               </a>
             </li>
             <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
+              <a href="https://github.com/jaedsonpys">
+                <img src="/github.svg" alt="GitHub logo" />
+                <h4>Meu GitHub</h4>
+                <p>Portfólio e projetos de código-aberto. Sinta-se a vontade para explorar!</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://dev.to/jaedsonpys">
+                <img src="/devto.svg" alt="Dev.to logo" />
+                <h4>Meus artigos</h4>
+                <p>Artigos técnicos sobre resolução de problemas ou dicas e guias na área de tecnologia.</p>
               </a>
             </li>
           </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
+          <a href="mailto:jaedson.dev@proton.me" className={styles.emailContactLink}>
+            <div className={styles.emailContactBox}>
+              <img src="/email.svg" alt="Email Icon" />
+              <span>Quero enviar um email!</span>
+            </div>
+          </a>
+        </nav>
       </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+    </main>
   )
 }
-
-export default App

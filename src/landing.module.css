@@ -1,0 +1,288 @@
+:root {
+    --side-padding: 40px;
+}
+
+.main {
+    padding: 100px var(--side-padding);
+}
+
+.aboutMeSection {
+    color: white;
+    max-width: max-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whoamiTextBox {
+    margin-bottom: 10px;
+}
+
+.whoamiTextBox span {
+    color: #28E9B2;
+    font-family: 'Cascadia Mono', Arial, Helvetica, sans-serif;
+}
+
+.aboutMeSection h1 {
+    font-family: 'Cascadia Mono', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.nameUnderlineDetail {
+    width: 100%;
+    border: 1px solid #28E9B2;
+    height: 10px;
+
+    margin-top: -15px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.aboutMeSection p {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin-top: 15px;
+    color: white;
+    line-height: 110%;
+    text-align: center;
+    font-weight: 400;
+}
+
+.locationCard {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #28E9B2;
+
+    padding: 5px 15px;
+    border: 1px solid #28E9B2;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.locationCard img {
+    margin-right: 10px;
+}
+
+/* Services section */
+
+.servicesSection {
+    margin-top: 75px;
+    width: 100%;
+    height: max-content;
+    position: relative;
+}
+
+.servicesSection .backgroundDetail {
+    width: 100%;
+    border: 1px solid #093327;
+    border-radius: 10px;
+    background: linear-gradient(137.34deg, #000000 15.45%, #093327 100%);
+    height: 700px;
+    position: absolute;
+
+    top: 0;
+}
+
+.servicesSection header {
+    position: relative;
+    z-index: 4;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.servicesSection header h2 {
+    font-size: 1em;
+    font-family: 'Cascadia Mono', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.servicesSection ul {
+    list-style: none;
+    padding: 0px 20px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 10px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.servicesSection ul li {
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    background: linear-gradient(25deg, #1a1a1a, #000000);
+    padding: 25px;
+
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.servicesSection ul li h3 {
+    color: #28E9B2;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.servicesSection ul li p {
+    color: rgb(193, 193, 193);
+    line-height: 130%;
+    margin-top: 15px;
+    font-size: .9em;
+    font-weight: 400;
+}
+
+/* Skills Section */
+
+
+.mySkillsList {
+    margin-top: 100px;
+}
+
+.mySkillsList header {
+    padding: 10px 15px;
+    border: 1px solid #28E9B2;
+    box-shadow: 8px 8px 10px #093327;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.mySkillsList header h2 {
+    color: #28E9B2;
+    font-family: 'Cascadia Mono', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.mySkillsList ul {
+    list-style: none;
+    color: white;
+    font-family: 'Cascadia Mono', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.mySkillsList ul li {
+    border: 1px solid #2d2d2d;
+    background: rgba(30, 30, 30, 0.47);
+
+    padding: 10px 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.mySkillsList ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.mySkillsList .skillsGroup {
+    margin-bottom: 20px;
+}
+
+/* Find me Section */
+
+.findmeSection {
+    margin-top: 75px;
+    position: relative;
+}
+
+.findmeSection .backgroundLine {
+    height: 1px;
+    width: 100vw;
+    background: repeating-linear-gradient(to right, #28E9B2 0px, #28E9B2, 25px, #000 25px, #000 35px);
+}
+
+.findmeSection header {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-left: calc(var(--side-padding) * -1);
+}
+
+.findmeSection .sectionName {
+    position: absolute;
+    top: -20px;
+
+    background-color: #000;
+}
+
+.findmeSection .sectionName h2 {
+    text-align: center;
+    font-family: 'Cascadia Mono', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #28E9B2;
+
+    border: 1px solid #28E9B2;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.findmeSection nav {
+    margin-top: 50px;
+}
+
+.findmeSection nav ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.findmeSection nav ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.findmeSection nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.findmeSection nav ul li {
+    border: 1px solid #2d2d2d;
+    background: linear-gradient(45deg, #000, #0A0A0A);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.findmeSection nav ul li h4 {
+    font-size: 1em;
+    font-family: 'Cascadia Mono', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+.findmeSection nav ul li p {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    line-height: 130%;
+}
+
+.emailContactBox {
+    padding: 10px 15px;
+    border: 1px solid white;
+    width: max-content;
+    
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.emailContactBox span {
+    font-family: 'Cascadia Mono', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: white;
+    margin-left: 10px;
+}
