@@ -127,12 +127,14 @@ export default function LandingPage() {
               </a>
             </li>
           </ul>
-          <a href="mailto:jaedson.dev@proton.me" className={styles.emailContactLink}>
-            <div className={styles.emailContactBox}>
-              <img src="/email.svg" alt="Email Icon" />
-              <span>Quero enviar um email!</span>
-            </div>
-          </a>
+          <div className={styles.sendMailButtonContainer}>
+            <a href="mailto:jaedson.dev@proton.me">
+              <div className={styles.emailContactBox}>
+                <img src="/email.svg" alt="Email Icon" />
+                <span>Quero enviar um email!</span>
+              </div>
+            </a>
+          </div>
         </nav>
       </section>
     </main>

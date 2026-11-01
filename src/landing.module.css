@@ -269,13 +269,22 @@
     line-height: 130%;
 }
 
+.sendMailButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sendMailButtonContainer a {
+    color: white;
+    width: 100%;
+    width: max-content;
+}
+
 .emailContactBox {
     padding: 10px 15px;
     border: 1px solid white;
     width: max-content;
-    
-    display: flex;
-    justify-self: center;
     border-radius: 10px;
 }
 
