@@ -107,23 +107,29 @@ export default function LandingPage() {
           <ul>
             <li>
               <a href="https://linkedin.com/in/jaedsonpys">
-                <img src="/linkedin.svg" alt="LinkedIn logo" />
-                <h4>Meu LinkedIn</h4>
-                <p>Atualizações na carreira e publicação de experiências profissionais.</p>
+                <div className={styles.cardBox}>
+                  <img src="/linkedin.svg" alt="LinkedIn logo" />
+                  <h4>Meu LinkedIn</h4>
+                  <p>Atualizações na carreira e publicação de experiências profissionais.</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="https://github.com/jaedsonpys">
-                <img src="/github.svg" alt="GitHub logo" />
-                <h4>Meu GitHub</h4>
-                <p>Portfólio e projetos de código-aberto. Sinta-se a vontade para explorar!</p>
+                <div className={styles.cardBox}>
+                  <img src="/github.svg" alt="GitHub logo" />
+                  <h4>Meu GitHub</h4>
+                  <p>Portfólio e projetos de código-aberto. Sinta-se a vontade para explorar!</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="https://dev.to/jaedsonpys">
-                <img src="/devto.svg" alt="Dev.to logo" />
-                <h4>Meus artigos</h4>
-                <p>Artigos técnicos sobre resolução de problemas ou dicas e guias na área de tecnologia.</p>
+                <div className={styles.cardBox}>
+                  <img src="/devto.svg" alt="Dev.to logo" />
+                  <h4>Meus artigos</h4>
+                  <p>Artigos técnicos sobre resolução de problemas ou dicas e guias na área de tecnologia.</p>
+                </div>
               </a>
             </li>
           </ul>
