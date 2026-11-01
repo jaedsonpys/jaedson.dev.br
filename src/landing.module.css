@@ -237,10 +237,10 @@
 .findmeSection nav ul {
     list-style: none;
     margin-bottom: 30px;
-}
 
-.findmeSection nav ul li:not(:last-child) {
-    margin-bottom: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 10px;
 }
 
 .findmeSection nav ul li a {
