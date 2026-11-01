@@ -6,6 +6,18 @@
     padding: 100px var(--side-padding);
 }
 
+@media (min-width: 1100px) {
+    :root {
+        --side-padding: 100px
+    }
+}
+
+@media (min-width: 1250px) {
+    :root {
+        --side-padding: 150px
+    }
+}
+
 .aboutMeSection {
     color: white;
     max-width: max-content;
@@ -67,6 +79,17 @@
     }
 }
 
+@media (min-width: 700px) {
+    .aboutMeSection h1 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 900px) {
+    .aboutMeSection h1 {
+        font-size: 4em;
+    }
+}
 
 .locationCard {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -126,12 +149,45 @@
     list-style: none;
     padding: 0px 20px;
 
+    position: relative;
+    z-index: 2;
+}
+
+.servicesSection ul .firstGroup {
     display: grid;
     grid-template-rows: 1fr;
     row-gap: 10px;
+    margin-bottom: 10px;
+}
 
-    position: relative;
-    z-index: 2;
+.servicesSection ul .secondGroup {
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 10px;
+}
+
+@media (min-width: 900px) {
+    .servicesSection ul {
+        padding: 0px 40px;
+    }
+
+    .servicesSection ul .firstGroup {
+        grid-template-rows: none;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+    }
+
+    .servicesSection ul .secondGroup {
+        grid-template-rows: none;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+
+    .servicesSection header h2 {
+        text-align: start;
+        margin-left: 40px;
+        font-size: 1.2em;
+    }
 }
 
 .servicesSection ul li {
@@ -161,7 +217,7 @@
 
 
 .mySkillsList {
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .mySkillsList header {
@@ -205,8 +261,55 @@
     margin-bottom: 5px;
 }
 
-.mySkillsList .skillsGroup {
-    margin-bottom: 20px;
+@media (min-width: 800px) {
+    .mySkillsList header {
+        border: none;
+        box-shadow: none;
+    }
+
+    .mySkillsList header h2 {
+        color: white;
+        font-size: 1.2em;
+    }
+
+    .mySkillsList ul {
+        width: max-content;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .skillsGroup {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mySkillsList .skillsGroup {
+        margin-bottom: 5px;
+    }
+    
+    .mySkillsList ul li {
+        width: max-content;
+        flex-direction: row-reverse;
+    }
+
+    .mySkillsList ul li span {
+        margin-left: 15px;
+    }
+
+    .mySkillsList ul li:not(:last-child) {
+        margin-bottom: 0;
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mySkillsList ul li span {
+        margin-left: 25px;
+    }
+
+    .mySkillsList ul li img {
+        height: 30px;
+    }
 }
 
 /* Find me Section */
@@ -259,6 +362,31 @@
     display: grid;
     grid-template-rows: 1fr;
     row-gap: 10px;
+}
+
+@media (min-width: 800px) {
+    .findmeSection nav {
+        margin-top: 75px;
+    }
+    
+    .findmeSection nav ul {
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+    }
+}
+
+@media (min-width: 900px) {
+    .findmeSection nav ul {
+        column-gap: 15px;
+        max-width: max-content;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .findmeSection nav ul li {
+        max-width: 320px;
+    }
 }
 
 .findmeSection nav ul li a {

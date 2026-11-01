@@ -23,22 +23,26 @@ export default function LandingPage() {
         </header>
         <div className={styles.backgroundDetail}></div>
         <ul>
-          <li>
-            <h3>Desenvolvimento de Fimware</h3>
-            <p>Desenvolvo para você ou para sua empresa a o código-fonte necessário para a resolução do problema. <b>Confiável, testado e eficiente.</b></p>
-          </li>
-          <li>
-            <h3>Desenvolvimento Full-Stack (Front-end e/ou Back-end)</h3>
-            <p>Da interface que atrai o cliente até o sistema que coorderna sua operação, utilizo ferramentas modernas para desenvolver sua aplicação web, desktop ou mobile (Android e iOS) para garantir performance, segurança e alta experiência do usuário.</p>
-          </li>
-          <li>
-            <h3>Prototipagem de Sistemas Embarcados e produtos IoT</h3>
-            <p>Tire sua ideia do papel. Utilizando microcontroladores e componentes da sua preferência, <b>crio o protótipo do seu produto para que você possa testar e validar a ideia</b> com baixo custo. A prototipagem inclui o Desenvolvimento de Firmware, Eletrônica e Desenho 3D junto com Impressão 3D</p>
-          </li>
-          <li>
-            <h3>Modelagem e Impressão 3D</h3>
-            <p>Peças técnicas ou peças para reparo. Modelagem de peças em qualquer escala. Impressão 3D de alta qualidade para produto final ou testes.</p>
-          </li>
+          <div className={styles.firstGroup}>
+            <li>
+              <h3>Desenvolvimento de Fimware</h3>
+              <p>Desenvolvo para você ou para sua empresa a o código-fonte necessário para a resolução do problema. <b>Confiável, testado e eficiente.</b></p>
+            </li>
+            <li>
+              <h3>Desenvolvimento Full-Stack (Front-end e/ou Back-end)</h3>
+              <p>Da interface que atrai o cliente até o sistema que coorderna sua operação, utilizo ferramentas modernas para desenvolver sua aplicação web, desktop ou mobile (Android e iOS) para garantir performance, segurança e alta experiência do usuário.</p>
+            </li>
+          </div>
+          <div className={styles.secondGroup}>
+            <li>
+              <h3>Prototipagem de Sistemas Embarcados e produtos IoT</h3>
+              <p>Tire sua ideia do papel. Utilizando microcontroladores e componentes da sua preferência, <b>crio o protótipo do seu produto para que você possa testar e validar a ideia</b> com baixo custo. A prototipagem inclui o Desenvolvimento de Firmware, Eletrônica e Desenho 3D junto com Impressão 3D</p>
+            </li>
+            <li>
+              <h3>Modelagem e Impressão 3D</h3>
+              <p>Peças técnicas ou peças para reparo. Modelagem de peças em qualquer escala. Impressão 3D de alta qualidade para produto final ou testes.</p>
+            </li>
+          </div>
         </ul>
       </section>
       <section className={styles.mySkillsList}>
