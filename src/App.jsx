@@ -128,9 +128,9 @@ export default function LandingPage() {
               </a>
             </li>
             <li>
-              <a href="https://dev.to/jaedsonpys">
+              <a href="https://medium.com/@jaedsonpys">
                 <div className={styles.cardBox}>
-                  <img src="/devto.svg" alt="Dev.to logo" />
+                  <img src="/medium.svg" alt="Medium logo" />
                   <h4>Meus artigos</h4>
                   <p>Artigos técnicos sobre resolução de problemas ou dicas e guias na área de tecnologia.</p>
                 </div>
