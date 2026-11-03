@@ -93,7 +93,7 @@ export default function LandingPage() {
               <img src="/mongodb.svg" alt="MongoDB icon" />
             </li>
             <li>
-              <span>JavaScript</span>
+              <span>MySQL</span>
               <img src="/mysql.svg" alt="MySQL icon" />
             </li>
           </div>
